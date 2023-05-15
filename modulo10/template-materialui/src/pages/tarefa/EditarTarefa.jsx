@@ -135,26 +135,7 @@ const EditarTarefa = ({handleCloseEditar, idTarefaSelecionada, tarefas, tarefa, 
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={3}>  
-              <FormControl fullWidth>
-                <InputLabel htmlFor="tarefa_recurso">Status</InputLabel>
-                <Select
-                  id="tarefa_status"
-                  value={statusTarefa}
-                  label="Status"
-                  onChange={handleStatus}
-                  size="small"
-                  sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
-                    fontWeight: 400,
-                  }} 
-                >
-                  <MenuItem value={'Aguardando'}>Aguardando</MenuItem>
-                  <MenuItem value={'Em Andamento'}>Em Andamento</MenuItem>
-                  <MenuItem value={'Concluída'}>Concluída</MenuItem>
-                </Select>
-              </FormControl>
-            </Grid>
+           
             <Grid container spacing={2} pl={2} mt={2}>
               <Grid item xs={1}>
                 <Button size="small" variant="contained" onClick={handleEditar}>Salvar</Button>
